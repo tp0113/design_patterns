@@ -45,7 +45,7 @@ public abstract class Player {
     public String play() {
         if (offense && offenseBehavior != null) {
            setOffenseBehavior();
-           return offenseBehavior;
+           return offenseBehavior.play();
         }
         else if (!offense && defenseBehavior != null) {
             setDefenseBehavior();
